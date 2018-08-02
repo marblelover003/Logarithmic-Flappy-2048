@@ -32,7 +32,7 @@ HTMLActuator.prototype.actuate = function (grid, metadata) {
   else if (Math.pow(2, metadata.score) >    8) classes.push("tile-16")
   else if (Math.pow(2, metadata.score) >    4) classes.push("tile-8")
   else if (Math.pow(2, metadata.score) >    2) classes.push("tile-4")
-  else                            classes.push("tile-2");
+  else                                         classes.push("tile-2");
 
   this.applyClasses(this.birdobj, classes);
 
