@@ -21,17 +21,18 @@ HTMLActuator.prototype.actuate = function (grid, metadata) {
 
   var classes = ["tile", "tile-bird"];
 
-       if (Math.pow(2, metadata.score) > 2048) classes.push("tile-super")
-  else if (Math.pow(2, metadata.score) > 1024) classes.push("tile-2048")
-  else if (Math.pow(2, metadata.score) >  512) classes.push("tile-1024")
-  else if (Math.pow(2, metadata.score) >  256) classes.push("tile-512")
-  else if (Math.pow(2, metadata.score) >  128) classes.push("tile-256")
-  else if (Math.pow(2, metadata.score) >   64) classes.push("tile-128")
-  else if (Math.pow(2, metadata.score) >   32) classes.push("tile-64")
-  else if (Math.pow(2, metadata.score) >   16) classes.push("tile-32")
-  else if (Math.pow(2, metadata.score) >    8) classes.push("tile-16")
-  else if (Math.pow(2, metadata.score) >    4) classes.push("tile-8")
-  else if (Math.pow(2, metadata.score) >    2) classes.push("tile-4")
+       if (Math.pow(2, metadata.score) > 4096) classes.push("tile-super")
+  else if (Math.pow(2, metadata.score) > 2048) classes.push("tile-2048")
+  else if (Math.pow(2, metadata.score) > 1024) classes.push("tile-1024")
+  else if (Math.pow(2, metadata.score) >  512) classes.push("tile-512")
+  else if (Math.pow(2, metadata.score) >  256) classes.push("tile-256")
+  else if (Math.pow(2, metadata.score) >  128) classes.push("tile-128")
+  else if (Math.pow(2, metadata.score) >   64) classes.push("tile-64")
+  else if (Math.pow(2, metadata.score) >   32) classes.push("tile-32")
+  else if (Math.pow(2, metadata.score) >   16) classes.push("tile-16")
+  else if (Math.pow(2, metadata.score) >    8) classes.push("tile-8")
+  else if (Math.pow(2, metadata.score) >    4) classes.push("tile-4")
+  else if (Math.pow(2, metadata.score) >    2) classes.push("tile-2")
   else                                         classes.push("tile-2");
 
   this.applyClasses(this.birdobj, classes);
